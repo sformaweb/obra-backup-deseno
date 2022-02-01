@@ -1,6 +1,5 @@
 node_modules
 dist
 .cache
-/css
 /js
 /datatables

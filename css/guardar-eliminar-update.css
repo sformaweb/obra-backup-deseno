@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+
+/* COLORES */
+/* Gris Formulario: rgb(238, 238, 238) */
+
+/* CUERPO DE LA PANTALLA */
+
+.container {
+    background: rgb(238, 238, 238);
+    width: 800px;
+    margin-top: 5%;
+    padding: 10%;
+    border-radius: 2%;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.308);
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+/* BOTON */
+.btn-primary {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #b81207;
+    border-color: #b81207;
+    padding: 10px;
+    margin-left:30%;
+    margin-top: 20px;
+    width: 200px;
+    font-family: 'Libre Franklin';
+
+}
+.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: #db1e11;
+    border-color: #db1e11;
+}
+
+
+
