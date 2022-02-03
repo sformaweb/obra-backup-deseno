@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+body{
+    min-height: 100%;
+    height: 100vh;
+   margin: 0%;
+   background-image: url('../img/puente-rande-historia-vigo.png'); 
+   background-size: cover;
+}
+
+main{
+    height: 40%;
+}
+/* MENU SUPERIOR */
+
+.main-body-menu-bar {
+	background-color: #B81207;
+	display: grid;
+	/* grid-template-columns: 10% 55% 35%; */
+	margin-bottom: 5%;
+	width: 100%;
+	min-height: 6rem;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin-top: 18px;
+	color: #ffff;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+	.menu-bar-search-field {
+		font-size: .75rem;
+	}
+
+	.menu-bar-navigation-link {
+		font-size: .75rem;
+	}
+
+	.menu-bar-search-field::placeholder {
+		background: url(../css-resources/search.png) left / 20px no-repeat;
+	}
+
+}
+
+@media only screen and (max-width: 750px) {
+
+	.main-body-menu-bar {
+		display: flex;
+		/* flex-direction: column; */
+		width: 100%
+	}
+
+	.menu-bar-button {
+		width: 100%;
+		height: 4rem;
+		justify-content: space-between;
+	}
+
+	.menu-bar-button {
+		display: flex;
+	}
+
+	.menu-bar-close-button {
+		margin-left: 1rem
+	}
+
+	.menu-bar-text {
+		display: inherit;
+		font-family: 'Open Sans', Sans-Serif;
+		font-weight: 300;
+		text-transform: uppercase;
+		align-items: center;
+		margin-right: 1rem;
+	}
+
+	/* VACÍO POR SI ACASO */
+	.menu-bar-navigation-links {
+		/* background-color: #F2F2F2; */
+		/* padding: 1rem 0 1rem; */
+
+	}
+
+	.menu-bar-navigation-links {
+		/* display: block; */
+	}
+
+	.menu-bar-navigation-link {
+		/* display: block; */
+		font-size: 1rem;
+	}
+
+	.menu-bar-navigation-link {
+		padding: 1rem;
+	}
+
+	.menu-bar-input {
+		background-color: #F2F2F2;
+		padding-bottom: 1rem;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu-bar-search-field {
+		background-color: #FFFFFF;
+		width: 90%;
+	}
+
+	.hide {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	.main-body-menu-bar {
+		display: flex;
+		flex-direction: column;
+		max-width: 25rem;
+		min-width: 15rem;
+		width: 100%
+	}
+
+	.menu-bar-button {
+
+		height: 4rem;
+		justify-content: space-between;
+	}
+
+	.menu-bar-button {
+		display: flex;
+	}
+
+	.menu-bar-close-button {
+		/* margin-left: 1rem */
+	}
+
+	.menu-bar-text {
+		display: inherit;
+		font-family: 'Open Sans', Sans-Serif;
+		font-weight: 300;
+		text-transform: uppercase;
+		align-items: center;
+		margin-right: 1rem;
+	}
+
+	.menu-bar-navigation-links {
+		/* background-color: #F2F2F2; */
+		/* padding: 1rem 0 1rem; */
+
+	}
+
+	.menu-bar-navigation-links {
+		/* display: block; */
+	}
+
+	.menu-bar-navigation-link {
+		/* display: block; */
+		font-size: 1rem;
+	}
+
+	.menu-bar-navigation-link {
+		padding: 1rem;
+	}
+
+	.menu-bar-input {
+		background-color: #F2F2F2;
+		padding-bottom: 1rem;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu-bar-search-field {
+		background-color: #FFFFFF;
+		width: 90%;
+	}
+
+	.hide {
+		display: none;
+	}
+
+}
+
+/* LOGIN */
+.align {
+    display: grid;
+    place-items: center;
+  }
+  
+  /* helpers/grid.css */
+  
+  :root {
+    --gridMaxWidth: 24em;
+    --gridWidth: 90%;
+  }
+  
+  .grid {
+    inline-size: var(--gridWidth);
+    margin-inline: auto;
+    max-inline-size: var(--gridMaxWidth);
+  }
+  
+  /* helpers/icon.css */
+  
+  .icon {
+    block-size: 1.25em;
+    display: inline-block;
+    inline-size: 1.25em;
+    line-height: 1.25em;
+    margin-right: 0.625em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .icon--info {
+    background-color: #e5e5e5;
+    border-radius: 50%;
+  }
+  
+  /* layout/base.css */
+  
+  :root {
+    --bodyBackgroundColor: #eaeaea;
+    --bodyColor: #999;
+    --bodyFontFamily: 'Helvetica', 'Arial';
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+  }
+  
+  /* modules/anchor.css */
+  
+  :root {
+    --anchorColor: inherit;
+    --anchorHoverColor: #B81207;
+  }
+  
+  a {
+    color: var(--anchorColor);
+    /* text-decoration: none; */
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: var(--anchorHoverColor);
+  }
+  
+  /* modules/form.css */
+  
+  fieldset {
+    border: none;
+    margin: 0;
+  }
+  
+ form input {
+       border: none;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+  }
+  
+  input[type='submit'] {
+    cursor: pointer;
+  }
+  
+  .form input[type='email'],
+  .form input[type='password'] {
+    inline-size: 100%;
+  }
+  
+  /* modules/login.css */
+  
+  :root {
+    --loginBorderRadius: 0.25em;
+    --loginHeaderBackgroundColor: #424242;
+  
+    --loginInputBorderRadius: 0.25em;
+  }
+  /* TÍTULO LOGIN */
+  .login__header {
+    background-color: var(--loginHeaderBackgroundColor);
+    border-top-left-radius: var(--loginBorderRadius);
+    border-top-right-radius: var(--loginBorderRadius);
+    color: #ffff;
+
+    padding: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .login__title {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .login__body {
+    background-color: #fff;
+    padding: 1.5em;
+    position: relative;
+    
+    
+  }
+  
+  .login__body::before {
+    background-color: #fff;
+    content: '';
+    height: 0.5em;
+    left: 50%;
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    width: 0.5em;
+    font-size: 17px;
+  }
+  
+  .login input[type='email'],
+  .login input[type='password'] {
+    border: 0.0625em solid #e5e5e5;
+    padding: 1em 1.25em;
+    font-size: 17px;
+    
+  }
+  
+  .login input[type='email'] {
+    border-top-left-radius: var(--loginInputBorderRadius);
+    border-top-right-radius: var(--loginInputBorderRadius);
+  }
+  
+  .login input[type='password'] {
+    border-bottom-left-radius: var(--loginInputBorderRadius);
+    border-bottom-right-radius: var(--loginInputBorderRadius);
+    border-top: 0;
+  }
+  
+  .login input[type='submit'] {
+    background-color: #B81207;
+    border-radius: var(--loginInputBorderRadius);
+    color: #fff;
+    font-weight: 700;
+    order: 1;
+    padding: 0.75em 1.25em;
+    transition: background-color 0.3s;
+  }
+  
+  .login input[type='submit']:focus,
+  .login input[type='submit']:hover {
+    background-color: #db1e11;
+  }
+  
+  .login__footer {
+    align-items: center;
+    background-color: #fff;
+    border-bottom-left-radius: var(--loginBorderRadius);
+    border-bottom-right-radius: var(--loginBorderRadius);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  
+  .login__footer p {
+    margin: 0;
+  }
+
+.grid{
+   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.308);
+  
+   
+}
+
+form{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+

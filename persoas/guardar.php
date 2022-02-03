@@ -12,23 +12,6 @@ $codigo_postal = $_POST['codigo_postal'];
 $telefono = $_POST['telefono'];
 $email = $_POST['email'];
 
-
-// $arrayIntereses = null;
-
-// $num_array = count($intereses);
-// $contador = 0;
-
-// if($num_array>0){
-//     foreach ($intereses as $key => $value) {
-//         if ($contador != $num_array-1){
-//         $arrayIntereses .= $value.' ';
-//         $contador++;
-//         } else {
-//         $arrayIntereses .= $value;
-//         }
-//     }
-// }
-
 $sql = "INSERT INTO persoas (nome, primeiro_apelido, segundo_apelido, nif, data_nacemento, sexo, codigo_postal, telefono, email) VALUES ('$nome', '$primeiro_apelido', '$segundo_apelido', '$nif', '$data_nacemento', '$sexo', '$codigo_postal', '$telefono', '$email')";
 $resultado = $mysqli->query($sql);
 
@@ -39,11 +22,11 @@ $resultado = $mysqli->query($sql);
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/guardar-eliminar-update.css">
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css-obra/guardar-eliminar-update.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </head>
 
 <body>
