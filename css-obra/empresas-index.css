@@ -301,10 +301,13 @@ h2{
   background-color: #B81207;  
   color: #FFFFFF;
   display: inline-block;
+  text-decoration: none;
 }
 
 .btn-info:hover{
 background-color: #db1e11;
+color: #FFFFFF;
+text-decoration: none;
 }
 
 .table-responsive{

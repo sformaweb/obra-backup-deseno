@@ -18,18 +18,19 @@
 
     <header class='main-body-menu-bar'>
 
-               <div class='menu-bar-navigation-links'>
+       
+        <div class='menu-bar-navigation-links'>
             <h1>Servizo de Orientación Laboral</h1>
 
         </div>
 
-        
+
 
     </header>
 
     <main>
         <!-- LOGIN -->
-      
+
         <div class="grid">
 
             <form action="login.php" method="POST" class="form login">
@@ -43,13 +44,13 @@
                     <div class="form__field">
                         <input type="email" name="nome" placeholder="Usuario" required>
                     </div>
-<br>
+                    <br>
                     <div class="form__field">
                         <input type="password" name="clave" placeholder="Contrasinal" required>
                     </div>
                     <br>
                     <div class="form__field">
-                        <input type="checkbox" name="recordarme" >
+                        <input type="checkbox" name="recordarme">
                         <label> Recórdame</label><br>
                     </div>
 
@@ -66,7 +67,7 @@
         </div>
 
 
-        
+
 
 
     </main>
@@ -74,8 +75,8 @@
 
 
     <footer-component></footer-component>
-      <script src="../js/footer.js"></script>
-   
+    <script src="../js/footer.js"></script>
+
 
 
 
