@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require '../persoas/conexion.php';
 
 $id = $_GET['id'];
 
@@ -17,8 +17,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 	<link href="../css/bootstrap-theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="../css-obra/modificar-nuevo.css">
-	<script src="../js/jquery-3.6.0.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="../js/header.js"></script>
 	<script src="../js/footer.js"></script>
 </head>
@@ -26,7 +26,9 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 <body>
 	<!-- MENU SUPERIOR -->
 	<header-component></header-component>
+
 	<!-- MAIN -->
+
 	<div class="container">
 		<div class="row">
 			<h3 style="text-align:center">MODIFICAR REXISTRO</h3>
@@ -113,11 +115,10 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 		</form>
 	</div>
 	<!-- FOOTER -->
-
 	<footer-component></footer-component>
-
 	<!-- FOOTER -->
 
+	
 </body>
 
 </html>

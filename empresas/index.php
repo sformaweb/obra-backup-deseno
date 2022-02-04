@@ -14,6 +14,31 @@ $resultado = $mysqli->query($sql);
 
 ?>
 
+
+
+<!-- <html lang="es">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<h2 style="text-align:center">EMPRESAS</h2>
+			</div>
+			
+			<div class="row">
+				<a href="nuevo.php" class="btn btn-primary">Nuevo Registro</a>			
+			</div>
+		</div>
+	</body>
+	
+</html> -->
+
 <html lang="gl">
 
 <head>
@@ -31,9 +56,8 @@ $resultado = $mysqli->query($sql);
 <body>
 
 	<!-- MENU SUPERIOR -->
-
 	<header-component></header-component>
-
+	
 	<!-- MAIN -->
 	<div class="container">
 		<div class="row1">
@@ -61,8 +85,8 @@ $resultado = $mysqli->query($sql);
 						<th>Nome</th>
 						<th>Poboación</th>
 						<th>Actividade</th>
-						<th>Data de alta</th>
-						<th>Ofertas de Emprego</th>
+						<th>Data de incorporación</th>
+						<th>Ofertas de contratación</th>
 						<th>Ofertas de Formación</th>
 					</tr>
 				</thead>
@@ -74,8 +98,8 @@ $resultado = $mysqli->query($sql);
 							<td><?php echo $row['nome']; ?></td>
 							<td><?php echo $row['poboacion']; ?></td>
 							<td><?php echo $row['actividade']; ?></td>
-							<td><?php echo $row['data_alta']; ?></td>
-							<td><?php echo $row['ofertas_emprego']; ?></td>
+							<td><?php echo $row['data_incorporacion']; ?></td>
+							<td><?php echo $row['ofertas_contratacion']; ?></td>
 							<td><?php echo $row['ofertas_formacion']; ?></td>
 							<td><a href="modificar.php?id=<?php echo $row['id']; ?>"><i class="fas fa-pencil-alt"></i></a></td>
 							<td><a href="eliminar.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete"><i class="fas fa-trash-alt"></i></a></td>
@@ -93,7 +117,7 @@ $resultado = $mysqli->query($sql);
 
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Eliminar Registro</h4>
+					<h4 class="modal-title" id="myModalLabel">Eliminar Rexistro</h4>
 				</div>
 
 				<div class="modal-body">
@@ -110,10 +134,10 @@ $resultado = $mysqli->query($sql);
 
 	<!-- <button id="myBtn"><a href="#top" style="color: white; text-decoration: none";><i class="fas fa-chevron-up"></i></a></button> -->
 	<div id="myBtn"><a href="#top" ;><i class="fas fa-chevron-up"></i></a></div> 
-	<!-- FOOTER -->
 
-	<footer-component></footer-component>
-
+		<!-- FOOTER -->
+		<footer-component></footer-component>
+		<!-- FOOTER -->
 	<script>
 		$('#confirm-delete').on('show.bs.modal', function(e) {
 			$(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));

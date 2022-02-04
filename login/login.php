@@ -5,80 +5,69 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="../css-obra/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login de Usuario</title>
 </head>
+<!-- MENU SUPERIOR -->
 
-<body>
+<header class='main-body-menu-bar'>
 
-    <!-- MENU SUPERIOR -->
 
-    <header class='main-body-menu-bar'>
+    <div class='menu-bar-navigation-links'>
+        <h1>Servizo de Orientación Laboral</h1>
 
-       
-        <div class='menu-bar-navigation-links'>
-            <h1>Servizo de Orientación Laboral</h1>
-
-        </div>
+    </div>
 
 
 
-    </header>
+</header>
 
-    <main>
-        <!-- LOGIN -->
+<main>
+    <!-- LOGIN -->
 
-        <div class="grid">
+    <div class="grid">
 
-            <form action="login.php" method="POST" class="form login">
+        <form action="login.php" method="POST" class="form login">
 
-                <header class="login__header">
-                    <h3 class="login__title">Inicio de sesión</h3>
-                </header>
+            <header class="login__header">
+                <h3 class="login__title">Inicio de sesión</h3>
+            </header>
 
-                <div class="login__body">
+            <div class="login__body">
 
-                    <div class="form__field">
-                        <input type="email" name="nome" placeholder="Usuario" required>
-                    </div>
-                    <br>
-                    <div class="form__field">
-                        <input type="password" name="clave" placeholder="Contrasinal" required>
-                    </div>
-                    <br>
-                    <div class="form__field">
-                        <input type="checkbox" name="recordarme">
-                        <label> Recórdame</label><br>
-                    </div>
-
+                <div class="form__field">
+                    <input type="text" name="nome" placeholder="Usuario" required>
+                </div>
+                <br>
+                <div class="form__field">
+                    <input type="password" name="clave" placeholder="Contrasinal" required>
+                </div>
+                <br>
+                <div class="form__field">
+                    <input type="checkbox" name="recordarme">
+                    <label> Recórdame</label><br>
                 </div>
 
-                <footer class="login__footer">
-                    <input type="submit" name="entrar" value="Entrar">
+            </div>
 
-                    <p><a href="#">Recuperar contrasinal</a></p>
-                </footer>
+            <footer class="login__footer">
+                <input type="submit" name="entrar" value="Entrar">
 
-            </form>
+                <p><a href="#">Recuperar contrasinal</a></p>
+            </footer>
 
-        </div>
+        </form>
 
+    </div>
 
+</main>
+<!-- FOOTER -->
 
-
-
-    </main>
-    <!-- FOOTER -->
-
-
-    <footer-component></footer-component>
-    <script src="../js/footer.js"></script>
-
-
-
+<footer-component></footer-component>
+<script src="../js/footer.js"></script>
 
 </body>
 
@@ -86,6 +75,9 @@
 if ($_POST) {
     session_start();
     require 'conexion-login.php';
+
+    $_SESSION['usuario'] = "miusuario";
+    $_SESSION['estado'] = "conectado";
 
     $nome = $_POST['nome'];
     $clave = $_POST['clave'];
@@ -105,8 +97,5 @@ if ($_POST) {
     }
 }
 ?>
-
-
-
 
 </html>

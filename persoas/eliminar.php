@@ -1,6 +1,6 @@
 <?php
 	
-	require 'conexion.php';
+	require '../persoas/conexion.php';
 
 	$id = $_GET['id'];
 	
@@ -16,8 +16,8 @@
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
 		<link href="../css/bootstrap-theme.css" rel="stylesheet">
 		<link rel="stylesheet" href="../css-obra/guardar-eliminar-update.css">	
-		<script src="../js/jquery-3.1.1.min.js"></script>
-		<script src="../js/bootstrap.min.js"></script>	
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
 	</head>
 	
 	<body>
@@ -30,7 +30,7 @@
 				<h3>ERRO AO ELIMINAR</h3>
 				<?php } ?>
 				
-				<a href="index.php" class="btn btn-primary">VOLTAR</a>
+				<a href="./index.php" class="btn btn-primary">VOLTAR</a>
 				
 				</div>
 			</div>

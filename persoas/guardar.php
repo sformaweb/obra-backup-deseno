@@ -12,6 +12,23 @@ $codigo_postal = $_POST['codigo_postal'];
 $telefono = $_POST['telefono'];
 $email = $_POST['email'];
 
+
+// $arrayIntereses = null;
+
+// $num_array = count($intereses);
+// $contador = 0;
+
+// if($num_array>0){
+//     foreach ($intereses as $key => $value) {
+//         if ($contador != $num_array-1){
+//         $arrayIntereses .= $value.' ';
+//         $contador++;
+//         } else {
+//         $arrayIntereses .= $value;
+//         }
+//     }
+// }
+
 $sql = "INSERT INTO persoas (nome, primeiro_apelido, segundo_apelido, nif, data_nacemento, sexo, codigo_postal, telefono, email) VALUES ('$nome', '$primeiro_apelido', '$segundo_apelido', '$nif', '$data_nacemento', '$sexo', '$codigo_postal', '$telefono', '$email')";
 $resultado = $mysqli->query($sql);
 
@@ -25,8 +42,8 @@ $resultado = $mysqli->query($sql);
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="../css-obra/guardar-eliminar-update.css">
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +57,7 @@ $resultado = $mysqli->query($sql);
                     <h3>ERRO AO GARDAR</h3>
                 <?php } ?>
 
-                <a href="index.php" class="btn btn-primary">VOLTAR</a>
+                <a href="./index.php" class="btn btn-primary">VOLTAR</a>
 
             </div>
         </div>

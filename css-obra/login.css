@@ -295,7 +295,7 @@ h1{
     cursor: pointer;
   }
   
-  .form input[type='email'],
+  .form input[type='text'],
   .form input[type='password'] {
     inline-size: 100%;
   }
@@ -349,7 +349,7 @@ h1{
     font-size: 17px;
   }
   
-  .login input[type='email'],
+  .login input[type='text'],
   .login input[type='password'] {
     border: 0.0625em solid #e5e5e5;
     padding: 1em 1.25em;
@@ -357,7 +357,7 @@ h1{
     
   }
   
-  .login input[type='email'] {
+  .login input[type='text'] {
     border-top-left-radius: var(--loginInputBorderRadius);
     border-top-right-radius: var(--loginInputBorderRadius);
   }

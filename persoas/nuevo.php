@@ -9,10 +9,10 @@
 
 <body>
 	<!-- MENU SUPERIOR -->
-
 	<header-component></header-component>
-	
+
 	<!-- MAIN -->
+
 	<div class="container">
 		<div class="row">
 			<h3 style="text-align:center">NOVO REXISTRO</h3>
@@ -40,21 +40,22 @@
 			<div class="form-group">
 				<label for="nif" class="col-sm-2 control-label">DNI / NIF:</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="telefono" name="nif" placeholder="Número do DNI">
+					<input type="text" class="form-control" id="nif" name="nif" placeholder="Número do DNI" pattern="[0-9]{8}+[A-Z]{1}" maxlength="9" required>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label for="data_nacemento" class="col-sm-2 control-label">Data de nacemento:</label>
 				<div class="col-sm-10">
-					<input type="date" class="form-control" id="email" name="data_nacemento" placeholder="dd-mm-aa" required>
+					<input type="date" class="form-control" id="data_nacemento" name="data_nacemento" placeholder="dd-mm-aa" required>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="sexo" class="col-sm-2 control-label">Sexo:</label>
 				<div class="col-sm-10">
-					<select class="form-control" id="estado_civil" name="sexo">
-						<option value="HOME">HOME</option>
+					<select placeholder="Sexo" class="form-control" id="sexo" name="sexo" placeholder="Selecciona">
+					<option value="" disabled selected>Selecciona</option>
+					<option value="HOME">HOME</option>
 						<option value="MULLER">MULLER</option>
 						<option value="OUTRO">OUTRO</option>
 					</select>
@@ -63,20 +64,20 @@
 			<div class="form-group">
 				<label for="codigo_postal" class="col-sm-2 control-label">Código postal:</label>
 				<div class="col-sm-10">
-					<input type="number" class="form-control" id="email" name="codigo_postal" placeholder="Código postal" required>
+					<input type="tel" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Código postal" maxlength="5" required>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label for="telefono" class="col-sm-2 control-label">Teléfono</label>
 				<div class="col-sm-10">
-					<input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+					<input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" required>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="email" class="col-sm-2 control-label">Correo electrónico:</label>
 				<div class="col-sm-10">
-					<input type="email" class="form-control" id="telefono" name="email" placeholder="Correo electrónico">
+					<input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
 				</div>
 			</div>
 
@@ -91,9 +92,7 @@
 		</form>
 	</div>
 	<!-- FOOTER -->
-
 	<footer-component></footer-component>
-
 	<!-- FOOTER -->
 </body>
 

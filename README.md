@@ -1,4 +1,4 @@
-# Demo de obra
+# Demo de obra (31/01 - 03/02)
 
 1. Creación da database "obra" e táboas de proba "usuarios" (funcionarios) e "persoas" (individuos que se rexistrarán no SOL) utilizando phpmyadmin.
 2. En cada unha das táboas decídense os campos (columnas) a cubrir, no caso de "persoas" son unha aproximación aos campos que se corresponderían cos do formulario de entrada da app.
@@ -20,6 +20,12 @@
 8. Noutra rama do proxecto fíxose un engadido no arquivo nuevo.php para incluir un apartado de LOPD (subindo un pdf á base).
 9. Engadiuse o traballo do equipo de deseño sobre o apartado de persoas, deste modo temos a páxina estilada con header e menú, footer e un layout completo de aplicación.
 10. Reestructurouse a árbore de directorios para unha mellor organización de carpetas e fíxose un index principal na base do proxecto.
+11. **Continuación do punto 6**: mellorouse o sistema de login de forma que ao abrir a aplicación o primeiro que se pide son as credenciais de usuario e contrasinal, unha vez son correctas envíanos a un index que será a páxina de inicio da app. Ahí xa atoparemos o layout xeral co menú superior para navegar polas distintas funcionalidades do sitio. Tamén funciona o logout de cerrar sesión, de forma que si voltamos a abrir a aplicación se pide de novo a autenticación.
+12. **continuación punto 7**: revisouse o código e refíxose a táboa de datos "empresas", e tras uns mínimos cambios xa conseguemos que esta parte funcione coma a das "persoas". Tamén se engadiron as funión de modificar, eliminar e update.
+13. Calendario e Citas: fíxose unha táboa nova e o seu php correspondente para sacar as citas por pantalla. Tamén se mellorou o index.php (pantalla inicial) para que se vexan ahí as citas do día.
+14. Púxose en común o código de programación e o de deseño do login, persoas e empresas. Modificáronse diversos arquivos para a súa mellora e a óptima referenciación de rutas absolutas.
+15. Falta o deseño do index.php principal e dos arquivos da carpeta citas.
+16. No login hai unha opción de recuperar contrasinal que de momento non é funcional (e non leva a ningures)
 
 ## Uso de Git e Github
 
