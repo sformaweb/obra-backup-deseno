@@ -37,7 +37,7 @@ if ($conn->connect_error) {
 <body>
     <div class="master-container">
         <div class="container-resumo">
-            <h1>Resumo do día</h1>
+            <h1>Axenda</h1>
             <?php
             $sql = "SELECT * FROM citas";
             $result = $conn->query($sql);
