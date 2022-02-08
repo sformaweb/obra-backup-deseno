@@ -6,7 +6,7 @@ $where = "";
 if (!empty($_POST)) {
 	$valor = $_POST['campo'];
 	if (!empty($valor)) {
-		$where = "WHERE nome LIKE '%$valor'";
+		$where = "WHERE nome LIKE '%".$valor."%'";
 	}
 }
 $sql = "SELECT * FROM empresas $where";

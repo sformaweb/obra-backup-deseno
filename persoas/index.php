@@ -6,7 +6,7 @@ $where = "";
 if (!empty($_POST)) {
 	$valor = $_POST['campo'];
 	if (!empty($valor)) {
-		$where = "WHERE nome LIKE '%$valor'";
+		$where = "WHERE nif LIKE '%".$valor."%'";
 	}
 }
 $sql = "SELECT * FROM persoas $where";
@@ -45,7 +45,7 @@ $resultado = $mysqli->query($sql);
 
 			<div class="busca-persoas">
 				<form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-					<b>Nome: </b><input type="text" id="campo" name="campo" />
+					<b>DNI/NIF: </b><input type="text" id="campo" name="campo" />
 					<input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-info" />
 				</form>
 			</div>
@@ -61,7 +61,7 @@ $resultado = $mysqli->query($sql);
 						<th>Nombre</th>
 						<th>Primeiro Apelido</th>
 						<th>Segundo Apelido</th>
-						<th>NIF</th>
+						<th>DNI/NIF</th>
 						<th>Data de nacemento</th>
 						<th>Sexo</th>
 						<th>Código postal</th>

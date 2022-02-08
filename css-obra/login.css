@@ -5,7 +5,7 @@
 
 body{
     min-height: 100%;
-    height: 100vh;
+    /* height: 100vh; */
    margin: 0%;
    background-image: url('../img/puente-rande-historia-vigo.png'); 
    background-size: cover;

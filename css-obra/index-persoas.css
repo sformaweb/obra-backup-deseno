@@ -7,6 +7,8 @@
 
 /* CUERPO */
 
+
+
 h2 {
 	margin-bottom: 5%;
 	font-family: 'Roboto', sans-serif;
@@ -17,7 +19,7 @@ h2 {
 }
 
 .busca-persoas {
-	margin-left: 60%;
+	margin-left: 58%;
 }
 
 .btn-primary {
@@ -50,10 +52,6 @@ h2 {
 	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.308);
 	font-family: 'Libre Franklin', sans-serif;
 }
-
-
-
-/* FOOTER */
 
 
 /* BOTÓN ARRIBA */

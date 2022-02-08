@@ -43,7 +43,7 @@ if ($conn->connect_error) {
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-                echo "<table class='table'><tr><th>Resolto</th><th>Data</th><th>Nome</th><th>Hora de comezo</th><th>Hora de remate</th></tr>";
+                echo "<table class='table'><tr><th>Resolto</th><th>Data</th><th>Nome</th><th>Hora de comezo</th><th>Hora de saída</th></tr>";
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr><td><input type='checkbox'></form><td>" . $row["data"] . "</td><td>" . $row["nome"] . "</td><td>" . $row["horain"] . "</td><td>" . $row["horaout"] . "</td></tr>";
                 }

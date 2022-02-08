@@ -50,7 +50,7 @@ if ($conn === false) {
                 </div>
             </div>
             <div class="form-group">
-                <label class="required">Hora de remate</label>
+                <label class="required">Hora de saída</label>
                 <div class="col-sm-10">
                     <input class="form-control time-input" type="text" name="horaout" id="horaout">
                 </div>
